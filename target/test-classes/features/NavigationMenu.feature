@@ -1,4 +1,4 @@
-@navigate
+@navigate @login
 Feature: Navigation Menu
 
   Scenario: Navigating Fleet -- Vehicles
