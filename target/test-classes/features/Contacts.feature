@@ -13,11 +13,11 @@ Feature: Contacts page
     When the user navigates to "Activities" "Calendar Events"
     Then the title contains "Calendars"
    #added "s" at the end of calendar to fail
-
+  @driver
   Scenario: Menu Options Driver
     Given the user logged in as "driver"
     Then the user should see following options
-      | Fleet      |
+      | Fleets     |
       | Customers  |
       | Activities |
       | System     |
