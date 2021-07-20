@@ -1,8 +1,8 @@
 package com.vytrack.step_definitions;
 
 import com.vytrack.pages.*;
-import com.vytrack.utilities.BrowserUtils;
-import com.vytrack.utilities.ConfigurationReader;
+
+import com.vytrack.utilities.*;
 import com.vytrack.utilities.DBUtils;
 import com.vytrack.utilities.Driver;
 import io.cucumber.java.en.Given;
@@ -10,15 +10,19 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 import java.util.List;
 import java.util.Map;
 
 public class ContactsStepDefs {
 
+   // private Driver ConfigurationReader;
+
     @Given("the user logged in as {string}")
     public void the_user_logged_in_as(String userType) {
         //go to login page
+
         Driver.get().get(ConfigurationReader.get("url"));
         //based on input enter that user information
         String username =null;
@@ -160,6 +164,7 @@ public class ContactsStepDefs {
 
 
     }
+
 
 
 }

@@ -38,7 +38,8 @@ Feature: Contacts page
 
 
   Scenario: login as a given user
-    Given the user is on the login page
+    Given the user is ogin as a given user
+    Given the user is on the logon the login page
     When the user logs in using following credentials
       | username  | user10      |
       | password  | UserUser123 |
